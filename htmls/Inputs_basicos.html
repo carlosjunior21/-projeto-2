@@ -14,11 +14,21 @@
   <form action="/PerformanceTest.lnk/htmls/Inputs_basicos.html" method="post">
 
     <label> Nome </label> <br>
-    <input type="text" name="nome" class="" id="" /> <br>
+    <input placeholder="Insira seu nome" type="text" name="nome" class="" id="" /> <br>
 
     <label> Senha </label> <br>
-    <input type="password" name=" Senha" /> <br>
+    <input placeholder="Insira sua senha" type="password" name=" Senha" /> <br>
 
+    <br>
+    <label>Time</label> <br>
+    <input type="text" placeholder="Insira seu time" name="time" list="Lista times">
+    <datalist id="Lista times">
+      <option value="santos" />
+      <option value="Palmeiras" />
+      <option value="Flamengo" />
+      <option value="Cruzeiro" />
+    </datalist>
+    <br> <br>
     <label> Opções </label>
     <input type="radio" name="Opção" /> A
     <input type="radio" name="Opção" /> B
